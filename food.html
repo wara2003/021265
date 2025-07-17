@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ร้านอาหารที่เคยไปกิน 💕</title>
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">สถานที่เที่ยว</a></li>
+            <li><a href="food.html">ร้านอาหาร</a></li>
+            <li><a href="gallery.html">แกลเลอรี่</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-content">
+        <h1>ร้านอาหารที่เคยไปกินด้วยกัน</h1>
+        <p class="intro">เอาจริงๆเราตะเวนกินนู้นนี้นั้นกันเยอะมากๆเลยนะ เค้าว่าเค้าเอามาลงในนี้ไม่หมดแน่ๆอ่ะ
+
+        </p>
+
+        <p>
+            จนตอนนี้เราทั้งคู่อ้วนตุบเลย 55555 แต่เค้ามีความสุขนะ อร่อยดีเวลาเจอร้านอร่อยๆละไปซ้ำกันต่อหลายๆรอบ
+        </p>
+    </section>
+
+
+    <div class="places-list">
+
+        <div class="place-card">
+            <div class="container">
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan3.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+            </div>
+
+            <h2>ร้านเฮงคูณเฮง</h2>
+            <p>ตอนแรกไม่ได้คาดหวังร้านนี้มากนะ แค่รู้สึกว่าไม่อยากไปกินร้านที่เขาใหญ่เลยมันดูเก็บค่านู้นนี้จุกจิกจัดๆ
+            </p>
+            <p>แต่พอเอาเข้าจริงๆ เค้าว่าร้านนี้ดีมากเลยนะ แต่ของไม่เยอะ ก็เข้าใจเหมาะสมกับราคาดี ไว้ไปกินกันอีกนะ</p>
+
+        </div>
+
+    </div>
+
+     <div class="places-list">
+
+        <div class="place-card">
+            <div class="container">
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan3.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+            </div>
+
+            <h2>ร้านก๋วยเตี๋ยวไก่</h2>
+            <p>เอาจริงเค้าชอบไก่ร้านนี้มากเลยอ่ะ แบบไก่นุ่มมาก
+            </p>
+            <p>อยากกินอีกจัง</p>
+
+        </div>
+
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // เปลี่ยนทุก 3 วินาที
+        }
+    </script>
+
+
+    <footer>
+        <p>เก็บไว้เป็นความทรงจำ 💗 โดย [ชื่อของคุณ]</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

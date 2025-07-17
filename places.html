@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>สถานที่เที่ยวของเรา 💕</title>
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">สถานที่เที่ยว</a></li>
+            <li><a href="food.html">ร้านอาหาร</a></li>
+            <li><a href="gallery.html">แกลเลอรี่</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-content">
+        <h1>สถานที่ที่เราเคยไปด้วยกัน</h1>
+        <p class="intro">เอาจริงๆ เราไปไหนมาไหนสองคนด้วยกันน้อยจัง ถ้าไม่นับแค่ไปกินนะ ไปเที่ยวไหนบ้างก็ดีนะ555
+            เอาเวลาไปเล่นเกมกันหมดละเอาจริงง เค้าอยากไปเที่ยวเพิ่มๆๆๆ 
+
+        </p>
+    
+        <p> 
+            เค้าอยากไปเที่ยวเกาะสมุยต่อ และที่เที่ยวอื่นอีก แบบภูเขาไรเงี่ย แต่ไม่รู้ทางเลย
+            ไม่รู้เธอจะอยากไปเที่ยวด้วยกันไหม
+            แต่เค้าก็กลัวเธอเบื่ออีกอย่างเรื่องรถก็ไม่พร้อม จะไปยังไงเนอะ55
+
+        </p>
+    </section>
+
+
+    <div class="places-list">
+
+        <div class="place-card">
+            <div class="container">
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan3.webp" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kholan.jpg" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="ima/kohlan2.webp" width="800" height="600"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+            </div>
+
+            <h2>เกาะล้าน</h2>
+            <p>เอาจริงตอนนั้นสนุกมากเลยนะ เค้าอยากไปอีกครั้ง แต่ไม่น่าไปกินร้านปิ้งย่างร้านเดิมละ 55555</p>
+            <p>เค้าว่าเค้าชอบตอนขับรถเที่ยวด้วยกันรอบเกาะ แต่เหมือนเกาะมันดูเข้มงวดเรื่องไปไหนมาไหน เค้าว่ามันน่าจะกันเรื่องนู้นนี้อยู่</p>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4174072077877!2d100.76690997492732!3d12.921466287391615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102e3be2ea86b17%3A0x86ddc50fd0dc3942!2z4Liq4Li24LiB4Liy4LiV4Li44Lir4LmA4LiC4LmJ4Li14LiZ!5e0!3m2!1sth!2sth!4v1721203050745!5m2!1sth!2sth"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // เปลี่ยนทุก 3 วินาที
+        }
+    </script>
+
+
+    <footer>
+        <p>เก็บไว้เป็นความทรงจำ 💗 โดย [ชื่อของคุณ]</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

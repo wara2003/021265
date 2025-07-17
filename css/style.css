@@ -1,0 +1,66 @@
+/* style.css */
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #fff0f5;
+  color: #5e2b51;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ff78e0;
+}
+
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ปุ่มนุ่ม ๆ สีชมพู-ขาว */
+.button-pink {
+  background: linear-gradient(135deg, #ffdcdc, #ff69b4); /* โทนชมพูอ่อนถึงเข้ม */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.5);
+  transition: all 0.3s ease;
+  font-family: 'Kanit', sans-serif;
+  user-select: none;
+  outline: none;
+a {
+  text-align: center;
+  color: #5a3535;
+}
+}
+
+.button-pink:hover {
+  background: linear-gradient(135deg, #ff8da1, #ff3b82);
+  box-shadow: 0 8px 20px rgba(255, 59, 130, 0.7);
+  transform: translateY(-3px);
+}
+
+.button-pink:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(255, 59, 130, 0.4);
+}
+
